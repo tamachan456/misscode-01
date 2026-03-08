@@ -264,7 +264,7 @@ function getScore(player) {
 function calculateAndReset() {
     const sA = getScore('A');
     const sB = getScore('B');
-    // 確認ダイアログ内の得点を上下に並べ、以前より2サイズ大きく表示
+    // 余計な文字を排除し、上下に並べて大きく表示
     const confirmMsg = `【 最終得点結果 】\n\n A選手： ${sA} 点\n\n B選手： ${sB} 点\n\nデータをリセットしますか？`;
     if (confirm(confirmMsg)) {
         codes = { A: [], B: [] };
